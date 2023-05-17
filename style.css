@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+   font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+.head{
+    background-image: url(./images/best-3d-wallpaper-android-07.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 100vw;
+    position:fixed;
+    top: 0px;
+    z-index: 1;
+}
+.nav {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    cursor: pointer;
+    color: white;
+}
+.nav p{
+    font-family: 'Dancing Script', cursive;
+}
+.nav span{
+    background-color: #09203f;
+    color:#f0b36a;;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    padding: 0.3em;
+    border-radius: 20px;
+}
+
+
+#left{
+    margin-right: 20px;
+    transition: .2s;
+}
+#left:hover{
+    color: #f0b36a;
+    
+}
+.Apps{
+    position: relative;
+    height: 80px;
+       
+
+  }
+.Apps .menus{ 
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 15%;
+    margin: 5px;
+    color: white;
+    transition: .5s;
+}
+
+    /* javascript */
+.Apps .menus.active{
+    height: 160px;
+  
+    
+}
+.Apps .menus a{
+    text-decoration: none;
+    color: white;
+}
+.Apps .menus a:hover{
+    color: #f0b36a;
+    font-weight: bold;
+}
+.subscription{
+    background: #09203f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-top:155px;
+    padding: 0.631em;
+    font-family: 'Kanit', sans-serif;
+     color: white;
+     line-height: 2;
+     font-weight: 300;
+     width: auto;
+     margin-bottom: 5px;
+     padding: 2% 8%;
+}
+#name{
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: 'Dancing Script', cursive;
+}
+span{
+    background-color: #09203f;
+    color:#f0b36a;;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+.inputEmail{
+    position: relative;
+    width: 20em;
+
+}
+.inputEmail input{
+    width: 100%;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0.5em;
+}
+
+.inputEmail button{
+    padding: 0.2em 0.8em;
+    border-radius: 15px;
+    box-shadow: 0 0 3px black, 0 0 5px red;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transform: .2s;
+    }
+.inputEmail button:hover{
+    cursor: pointer;
+    background-color: #09203f;
+    color: #f0b36a;
+    font-weight: bold;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;    
+}
+
+form > input{
+    box-shadow: 0 2px 5px black, 1px 3px 3px #f0b36a;
+    border-radius: 0.625rem;
+    padding: 0.6em;
+}
+form label{
+    font-family: 'Pacifico', cursive;
+}
+
+#formbtn, #bodybtn{
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    padding: 0.2em 0.8em;
+    border-radius: 15px;
+    box-shadow: 0 0 1px black, 0 0 5px #f0b36a;
+    transform: .2s;
+    background: transparent;
+}
+
+#formbtn:hover{
+    cursor: pointer;
+    color: #f0b36a;
+    font-weight: bold;
+}
+
+#bodybtn:hover{
+    cursor: pointer;
+    color: #f0b36a;;
+    font-weight: bold;
+}
+
+.body{
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    height: 100%;  
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+     align-items: center;
+    justify-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0.631em;
+    flex-basis:content;
+    cursor: pointer;
+    font-size: 1rem;
+    
+}
+.bd{
+
+    border: 2px solid #615444;
+    margin: 0.3125rem;
+    border-radius: 0.625rem;
+    padding: 1em 0.6em;
+    transition: .5s;
+    text-align: center;
+}
+.bd:hover{
+    box-shadow: 0 2px 5px white;
+    border: 1px solid white;
+    font-size: 1.1rem;
+
+}
+
+
+.bd h2{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #f0b36a;
+    text-transform:uppercase;
+    font-family: 'Crimson Text', serif;
+ 
+}
+.bd ul li{
+    list-style-type: none;
+
+}
+
+.bd ul li:hover{
+    font-size:1.1rem;
+    color: rgba(0, 0, 0, 100);
+    border-bottom: 0.5px solid white;
+}
+.foot{
+margin-top: 5px;
+}
+.footer, .footIcon{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items:center;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(80, 102, 110, 0.1), #09203f,rgba(80, 102, 110, 0.1));
+width: auto;
+}
+.footIcon i{
+    margin-right: 20px;
+    color: white;
+}
+
+.footIcon i:hover{
+    color: #f0b36a;
+    cursor: pointer;
+}
+
+
+/* Projects Css */
+.Projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: relative;
+    margin-top: 150px;
+    background: url(./images/abstract_triangles-HD.jpg) no-repeat center center/ cover;
+}
+.stopwatch{
+    position: relative;
+    color:black;
+    font-weight: 600; 
+    margin: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 5px white;
+    padding: 20px;
+    width: 70%;
+    
+    background: white;
+}
+.stopwatch h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#clock{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items:center;
+}
+#clock div{
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #ff8c00;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.buttons button{
+    padding: 0.5em;
+    width: 150px;
+    box-shadow: 0 0 5px black;
+    transition: .5s;
+}
+.buttons button:hover{
+    cursor: pointer;
+    background: transparent;
+    color: #ff8c00;
+}
+
+.favourite-quotes{
+    background: rgba(203, 208, 209, 0.9);
+    position: relative;
+    color:black;
+    margin: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 5px white;
+    padding: 20px;
+    width: 70%;
+    border-radius: 10px;
+    
+   
+}
+.favourite-quotes h2{
+    text-align: center;
+    color: white;
+    text-shadow: 0 1px 5px black, 0 2px 7px white, 0 3px 10px black;
+}
+
+.favourite-quotes p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+.quotemain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px 5px;
+    box-shadow: 0 0 5px black;
+    
+    
+}
+.quote p{
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 13px;
+    
+    
+}
+.quote #btn{
+    align-items: center;
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+    
+   
+}
+
+#btnquote{
+    padding: 0.4em;
+    font-size: 12px;
+    background:#09203f;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+#btnquote:hover{
+    background: transparent;
+    cursor: pointer;
+    color: black;
+   
+}
+
+.person{
+    text-align: center;
+    color: red;
+    font-size: 1.5rem;
+}
+
+
+
