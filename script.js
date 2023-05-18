@@ -12,7 +12,6 @@ const menuList = document.querySelector(".menus")
     const minutes =document.getElementById("min")
     const seconds = document.getElementById("sec")
     var startStopBtn = document.getElementById("st-stp")
-    var addSpeedBtn = document.getElementById("addSpeed")
     var clear = document.getElementById("clear")
     hr = 0;
     min = 0;
@@ -87,15 +86,11 @@ stopWatchCount()
   clear=  clear.onclick = clearCount
 
 
-   speed = addSpeedBtn.onclick = function addSpeed(){
-    startAndPauseWatch() 
-    count = setInterval(stopWatchCount, 100)
-    }
-  
+
 // Get new quotes
-const quoteBtn = document.getElementById("btnquote")
-var quote = document.getElementById("quotes")
-var  person = document.getElementById("changePerson")  
+const    btnQ = document.getElementById("btnQ")
+const quote = document.getElementById("quotes")
+const  person = document.getElementById("changePerson")  
 
 var MQUOTES = [
     {
@@ -141,8 +136,8 @@ var MQUOTES = [
 
 ]
 
-quoteBtn.addEventListener("click", ()=>{
+btnQ.onclick = function changeQuotes(){
     random = Math.floor(Math.random() * MQUOTES.length)
     quote.innerText= MQUOTES[random].quote
     person.innerText= MQUOTES[random].person
-})
+}

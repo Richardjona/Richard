@@ -322,10 +322,11 @@ width: auto;
     text-shadow: 0 1px 5px black, 0 2px 7px white, 0 3px 10px black;
 }
 
-.favourite-quotes p{
+.favourite-quotes #daily{
     text-align: center;
     font-size: 13px;
     font-weight: 600;
+    color: red;
 }
 .quotemain{
     display: flex;
@@ -338,35 +339,33 @@ width: auto;
     
     
 }
-.quote p{
+.quote #quotes{
     padding: 10px;
     line-height: 1.5;
-    font-size: 13px;
+    font-size: 1.5rem;
+    text-align: center;
     
-    
-}
-.quote #btn{
-    align-items: center;
-    position: absolute;
-    left: 45%;
-    bottom: 0%;
-    
-   
 }
 
-#btnquote{
+
+#btnQ{
+    width: 50%;
+    margin: auto;
     padding: 0.4em;
     font-size: 12px;
     background:#09203f;
     color: white;
     border-radius: 10px;
-    
+    transition: .5s ease-in-out;
+    text-align: center;
 }
 
-#btnquote:hover{
+
+#btnQ:hover{
     background: transparent;
     cursor: pointer;
     color: black;
+    border: 2px solid red;
    
 }
 
