@@ -141,3 +141,40 @@ btnQ.onclick = function changeQuotes(){
     quote.innerText= MQUOTES[random].quote
     person.innerText= MQUOTES[random].person
 }
+
+// Count down timer for new year 2024
+
+const daysRemaining = document.getElementById("days")
+const hoursRemaining= document.getElementById("hours")
+const minutesRemaining = document.getElementById("minutes")
+const secondsRemaining = document.getElementById("seconds")
+
+const Newyear = new Date("2024-01-01")
+const now = new Date().getTime();
+const difference =Newyear - now;
+
+newYearCountDown()
+setInterval(newYearCountDown, 1000)
+
+function newYearCountDown(){
+    Days = Math.floor(difference/(1000*60*60*24));
+    Hours = Math.floor((difference%(1000*60*60*24))/(1000*60*60));
+    Minutes = Math.floor((difference%(1000*60*60))/(1000*60));
+    Seconds = Math.floor((difference%(1000*60))/1000);
+
+   s = Seconds < 10? "0"+Seconds:Seconds;
+   m =  Minutes < 10? "0"+Minutes:Minutes;
+   h =  Hours < 10? "0"+Hours:Hours;
+
+   if(difference < 0){
+    alert("It is new Year")
+   }else{
+    daysRemaining.innerText = Days;
+    hoursRemaining.innerText = h;
+    minutesRemaining.innerText = m;
+    secondsRemaining.innerText = s;
+    
+   }
+    
+    
+}

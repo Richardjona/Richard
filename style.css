@@ -256,6 +256,34 @@ width: auto;
     margin-top: 150px;
     background: url(./images/abstract_triangles-HD.jpg) no-repeat center center/ cover;
 }
+.watch{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.newYear{
+    background: rgb(201, 190, 190);
+}
+.newYear h3{
+    color:rgb(161, 148, 131);
+    margin: 20px;
+    font-size: 1.5rem;
+}
+.countDown{
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    border-radius: 10px;
+   justify-content: center;
+}
+.countDown div, span{
+    background: none;
+    color: #09203f;
+    padding: 1em;
+}
+
 .stopwatch{
     position: relative;
     color:black;
@@ -280,6 +308,8 @@ width: auto;
     justify-content: center;
     justify-items:center;
 }
+
+
 #clock div{
     margin-right: 10px;
     font-size: 1.5rem;
@@ -376,4 +406,20 @@ width: auto;
 }
 
 
+.calculator{
+    background: white;
 
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap:10px;
+    grid-auto-rows: minmax(30px, auto);
+}
+.button-container > div{
+    background: #eee;
+    padding: 1emd;
+}
+.button-container > div:nth-child(odd){
+    background: #ddd;
+}
