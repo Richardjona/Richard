@@ -75,29 +75,30 @@
         <div class="calculator">
             <h2>Basic Calculator </h2><h3>Richard's</h3>
             <div class="input">
+                <div class="displayResult" ></div>
                 <input id="inputCal" type="numbers" placeholder="0.00">
             </div>
             <div class="button-container">
-                <div class="btnCal">X^2</div>
-                <div class="btnCal">-</div>
-                <div class="btnCal">mod</div>
-                <div class="btnCal">back</div>
-                <div class="btnCal">clear</div>
-                <div class="btnCal">7</div>
-                <div class="btnCal">8</div>
-                <div class="btnCal">9</div>
-                <div class="btnCal">/</div>
-                <div class="btnCal">4</div>
-                <div class="btnCal">5</div>
-                <div class="btnCal">6</div>
-                <div class="btnCal">X</div>
-                <div class="btnCal">1</div>
-                <div class="btnCal">2</div>
-                <div class="btnCal">3</div>
-                <div class="btnCal" id="+">+</div>
-                <div class="btnCal">0</div>
-                <div class="btnCal">.</div>
-                <div class="btnCal">=</div>
+                <div  onclick="operators('**')">X^2</div>
+                <div  onclick="operators('-')">-</div>
+                <div  onclick="operators('%')">mod</div>
+                <div  onclick = "backSpace()">back</div>
+                <div  onclick = "Clear()">clear</div>
+                <div  onclick="appendNum(7)">7</div>
+                <div  onclick="appendNum(8)">8</div>
+                <div  onclick="appendNum(9)">9</div>
+                <div  onclick="operators('/')">/</div>
+                <div  onclick="appendNum(4)">4</div>
+                <div  onclick="appendNum(5)">5</div>
+                <div  onclick="appendNum(6)">6</div>
+                <div  onclick="operators('*')">X</div>
+                <div  onclick="appendNum(1)">1</div>
+                <div  onclick="appendNum(2)">2</div>
+                <div  onclick="appendNum(3)">3</div>
+                <div  onclick="operators('+')">+</div>
+                <div  onclick="appendNum(0)">0</div>
+                <div  onclick="appendNum('.')">.</div>
+                <div  id="result" onclick="calculate()">=</div>
             </div>
 
         </div>

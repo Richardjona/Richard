@@ -185,28 +185,44 @@ const getInput = document.getElementById("inputCal")
 let plus;
 let answer;
 
+let space = " "
+let clearInput = "0.00"
 
-userInput = getInput.value
 
-calButtons.forEach(btn => btn.addEventListener("click",function(e){
-    plus = e.target.innerText
+// calButtons.forEach(btn => btn.addEventListener("click",function(e){
+//     plus = e.target.innerText
+// }))
+""
+function appendNum(num){
+    space += num
+    getInput.value = space
 
-    if(plus == back){
-        getInput.innerText.value =""
-    } else{
-        getInput.value += plus
-        console.log(getInput)
+    return space
+}
+
+function Clear(){
+    space = ""
+    getInput.value= space
+    
+}
+
+
+function backSpace(){
+    // numbers= space.value
+    space = space.slice(0,-1)
+    getInput.value = space
+}
+
+function operators(op){
+    space += op
+    getInput.value = op
+}
+
+function calculate(){
+    try{
+        result = eval(space)
+        getInput.value= result
+    }catch(error){
+        getInput.value= "error"
     }
- 
-} ))
-console.log(userInput)
-// 
-
-// function calculateNumbers(num1,num2){
-//     if (plus == - ){
-//         answer = num1 - num2
-//     }
-   
-// return answer
-// }
-// console.log(calculateNumbers(3, 2))
+}
