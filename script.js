@@ -149,14 +149,15 @@ const hoursRemaining= document.getElementById("hours")
 const minutesRemaining = document.getElementById("minutes")
 const secondsRemaining = document.getElementById("seconds")
 
-const Newyear = new Date("2024-01-01")
-const now = new Date().getTime();
-const difference =Newyear - now;
+
 
 newYearCountDown()
 setInterval(newYearCountDown, 1000)
 
 function newYearCountDown(){
+    const Newyear = new Date("2024-01-01")
+    const now = new Date().getTime();
+    const difference = Newyear - now;
     Days = Math.floor(difference/(1000*60*60*24));
     Hours = Math.floor((difference%(1000*60*60*24))/(1000*60*60));
     Minutes = Math.floor((difference%(1000*60*60))/(1000*60));
@@ -175,6 +176,37 @@ function newYearCountDown(){
     secondsRemaining.innerText = s;
     
    }
-    
-    
+
 }
+
+// calculator App Scripts
+const calButtons = document.querySelectorAll(".btnCal")
+const getInput = document.getElementById("inputCal")
+let plus;
+let answer;
+
+
+userInput = getInput.value
+
+calButtons.forEach(btn => btn.addEventListener("click",function(e){
+    plus = e.target.innerText
+
+    if(plus == back){
+        getInput.innerText.value =""
+    } else{
+        getInput.value += plus
+        console.log(getInput)
+    }
+ 
+} ))
+console.log(userInput)
+// 
+
+// function calculateNumbers(num1,num2){
+//     if (plus == - ){
+//         answer = num1 - num2
+//     }
+   
+// return answer
+// }
+// console.log(calculateNumbers(3, 2))
