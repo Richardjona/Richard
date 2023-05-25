@@ -106,7 +106,8 @@
     font-weight: bold;
 }
 .subscription{
-    background: #09203f;
+    /* background: #09203f; */
+    background: url(./images/DSC_7074\ \(1\).JPG) no-repeat ;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -126,8 +127,8 @@
     font-weight: 1000;
     font-family: 'Dancing Script', cursive;
 }
-span{
-    background-color: #09203f;
+#name span{
+    /* background-color: #09203f; */
     color:#f0b36a;;
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
