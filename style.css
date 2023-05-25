@@ -38,20 +38,48 @@
     border-radius: 20px;
 }
 
-
 #left{
+    margin-right: 10px;
+}
+
+.bars i{
+    width: 50px;
+}
+.bars i:hover{
+    size: 20px;  
+}
+
+#left a{
+    text-decoration: none;
     margin-right: 20px;
     transition: .2s;
+    color: white;
+    position: relative;
 }
-#left:hover{
-    color: #f0b36a;
+#left a::after{
+    content: "";
+    left: -20%;
+    position: absolute;
+    bottom: -10px;
+    height: 2px;
+    background: #f0b36a;
+    width: 0;
+    transition: .3s;
+}
+
+#left a:hover::after{
+    width: 100%;
     
 }
 .Apps{
     position: relative;
     height: 80px;
-       
+     color: white;  
 
+  }
+  .Apps .menu{
+    color: white;
+    font-weight: normal;
   }
 .Apps .menus{ 
     height: 0px;
@@ -69,11 +97,11 @@
   
     
 }
-.Apps .menus a{
+.Apps .menus, a{
     text-decoration: none;
     color: white;
 }
-.Apps .menus a:hover{
+.Apps .menus, a:hover{
     color: #f0b36a;
     font-weight: bold;
 }
@@ -233,14 +261,16 @@ margin-top: 5px;
     justify-items:center;
     height: 50px;
     background: linear-gradient(90deg, rgba(80, 102, 110, 0.1), #09203f,rgba(80, 102, 110, 0.1));
-width: auto;
-}
-.footIcon i{
-    margin-right: 20px;
+    width: auto;
     color: white;
 }
+.footIcon > i, a{
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
 
-.footIcon i:hover{
+.footIcon i a:hover{
     color: #f0b36a;
     cursor: pointer;
 }
@@ -469,14 +499,4 @@ width: auto;
     width: 100%;
     outline:none;
     box-shadow: inset -2px -2px 3px rgb(165, 151, 151) ,0 0 3px rgb(138, 127, 127);
-}
-
-.displayResult{
-    height: 30px;
-    width: 60px;
-    position: absolute;
-    background: red;
-    top: 5px;
-    left: 5px;
-    border: 2px solid black;
 }
