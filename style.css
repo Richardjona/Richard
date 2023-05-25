@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-   font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 .head{
@@ -142,6 +142,7 @@ span{
     display: inline-block;
     border-radius: 20px;
     padding: 0.5em;
+    outline: none;
 }
 
 .inputEmail button{
@@ -162,6 +163,7 @@ span{
 form{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 20px;    
 }
@@ -170,7 +172,11 @@ form > input{
     box-shadow: 0 2px 5px black, 1px 3px 3px #f0b36a;
     border-radius: 0.625rem;
     padding: 0.6em;
+    width: 300px;
+    outline: none;
 }
+
+
 form label{
     font-family: 'Pacifico', cursive;
 }
@@ -184,6 +190,12 @@ form label{
     box-shadow: 0 0 1px black, 0 0 5px #f0b36a;
     transform: .2s;
     background: transparent;
+}
+#bodybtn a{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
 }
 
 #formbtn:hover{
